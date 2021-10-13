@@ -1,0 +1,20 @@
+name: AutoML with TPOT
+description: Automated data visualization and scikit learn pipeline creation using TPOT, Dask, and CML Workers in a jupyter notebook.
+author: Cloudera Inc.
+specification_version: 1.0
+prototype_version: 1.0
+date: "2021-09-15"
+
+runtimes:
+  - editor: JupyterLab
+    kernel: Python 3.6
+    edition: Standard
+    version: 2021.06
+    
+tasks:
+  - type: run_session
+    name: Install dependencies
+    script: cml/install_dependencies.py
+    kernel: python3
+    memory: 4
+    cpu: 2

@@ -1,0 +1,9 @@
+click==7.1.2
+dask[complete]==2021.2.0
+dask-ml==1.8.0
+distributed==2021.2.0
+ipywidgets==7.6.3
+pandas==1.1.5
+pandas-profiling==3.0.0
+scikit-learn==0.24.2
+TPOT==0.11.7
