@@ -9,12 +9,11 @@ runtimes:
   - editor: JupyterLab
     kernel: Python 3.6
     edition: Standard
-    version: 2021.06
+    version: 2021.09
     
 tasks:
   - type: run_session
     name: Install dependencies
     script: cml/install_dependencies.py
-    kernel: python3
     memory: 4
     cpu: 2
