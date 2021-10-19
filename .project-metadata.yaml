@@ -9,12 +9,22 @@ runtimes:
   - editor: JupyterLab
     kernel: Python 3.6
     edition: Standard
-    version: 2021.06
+    version: 2021.09
     
 tasks:
-  - type: run_session
-    name: Install dependencies
+  - type: create_job
+    name: Install Dependencies
+    entity_label: install_dependencies
     script: cml/install_dependencies.py
-    kernel: python3
-    memory: 4
+    arguments: None
     cpu: 2
+    memory: 4
+    short_summary: Create job to install project dependencies.
+    environment:
+      TASK_TYPE: CREATE/RUN_JOB
+    kernel: python3
+
+  - type: run_job
+    entity_label: install_dependencies
+    short_summary: Running install dependencies job.
+    long_summary: Running the job to install dependencies.
