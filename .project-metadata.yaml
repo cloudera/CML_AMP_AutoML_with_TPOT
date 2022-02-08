@@ -7,7 +7,7 @@ date: "2021-09-15"
 
 runtimes:
   - editor: JupyterLab
-    kernel: Python 3.6
+    kernel: Python 3.7
     edition: Standard
     version: 2021.09
 
