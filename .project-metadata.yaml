@@ -9,7 +9,7 @@ runtimes:
   - editor: JupyterLab
     kernel: Python 3.9
     edition: Standard
-    version: 2021.09
+    version: 2021.12
 
 tasks:
   - type: create_job
